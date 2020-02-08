@@ -30,6 +30,7 @@ platform :ios do
       workspace: "ContinuesCITest.xcworkspace",
       scheme: "ContinuesCITest",
       xcargs: "-UseNewBuildSystem=YES",
+      xcargs: "-allowProvisioningUpdates",
       skip_archive: true,
       skip_package_ipa: true,
       clean: true)
