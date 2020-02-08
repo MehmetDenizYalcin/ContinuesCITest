@@ -51,7 +51,6 @@ platform :ios do
                 workspace: "ContinuesCITest.xcworkspace",
                 include_bitcode: true)
     end
-  end
 
   desc "Running Gitlab-CI scripts."
   lane :ci do
