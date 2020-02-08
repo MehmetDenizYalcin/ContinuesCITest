@@ -16,6 +16,9 @@
 		AF4287C923EF2CC400AB2A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4287C723EF2CC400AB2A03 /* LaunchScreen.storyboard */; };
 		AF4287D423EF2CC400AB2A03 /* ContinuesCITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4287D323EF2CC400AB2A03 /* ContinuesCITestTests.swift */; };
 		AF4287DF23EF2CC400AB2A03 /* ContinuesCITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4287DE23EF2CC400AB2A03 /* ContinuesCITestUITests.swift */; };
+		AFB828FA23EF2FEF0088F28D /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = AFB828F823EF2FEF0088F28D /* Appfile */; };
+		AFB828FB23EF2FEF0088F28D /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = AFB828F923EF2FEF0088F28D /* Fastfile */; };
+		AFB828FD23EF31960088F28D /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = AFB828FC23EF31960088F28D /* .travis.yml */; };
 		C1760E1CE29D6055865E424B /* Pods_ContinuesCITest_ContinuesCITestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0476D91553DE75ED15E85BE /* Pods_ContinuesCITest_ContinuesCITestUITests.framework */; };
 		C60F50B880BF705FFC366057 /* Pods_ContinuesCITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A81B22EEF94588CB46672A4F /* Pods_ContinuesCITest.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +58,9 @@
 		AF4287DA23EF2CC400AB2A03 /* ContinuesCITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContinuesCITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4287DE23EF2CC400AB2A03 /* ContinuesCITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuesCITestUITests.swift; sourceTree = "<group>"; };
 		AF4287E023EF2CC400AB2A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB828F823EF2FEF0088F28D /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		AFB828F923EF2FEF0088F28D /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		AFB828FC23EF31960088F28D /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 		B0476D91553DE75ED15E85BE /* Pods_ContinuesCITest_ContinuesCITestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContinuesCITest_ContinuesCITestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A13F1DB9FB638F5C48B5CB /* Pods-ContinuesCITest-ContinuesCITestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContinuesCITest-ContinuesCITestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ContinuesCITest-ContinuesCITestUITests/Pods-ContinuesCITest-ContinuesCITestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDEBD03B912EBC0C7AFB930B /* Pods-ContinuesCITest-ContinuesCITestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContinuesCITest-ContinuesCITestUITests.release.xcconfig"; path = "Target Support Files/Pods-ContinuesCITest-ContinuesCITestUITests/Pods-ContinuesCITest-ContinuesCITestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +117,6 @@
 				EB04CEC3B01741413BBC0E31 /* Pods-ContinuesCITestTests.debug.xcconfig */,
 				D783559791A4F237F0037911 /* Pods-ContinuesCITestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,6 +127,8 @@
 				AF4287D223EF2CC400AB2A03 /* ContinuesCITestTests */,
 				AF4287DD23EF2CC400AB2A03 /* ContinuesCITestUITests */,
 				AF4287BA23EF2CC300AB2A03 /* Products */,
+				AFB828FC23EF31960088F28D /* .travis.yml */,
+				AFB828F723EF2FEF0088F28D /* fastlane */,
 				418007675B919E385F9F8429 /* Pods */,
 				36EB1A441D10605B4A0BD81F /* Frameworks */,
 			);
@@ -167,6 +174,15 @@
 				AF4287E023EF2CC400AB2A03 /* Info.plist */,
 			);
 			path = ContinuesCITestUITests;
+			sourceTree = "<group>";
+		};
+		AFB828F723EF2FEF0088F28D /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				AFB828F823EF2FEF0088F28D /* Appfile */,
+				AFB828F923EF2FEF0088F28D /* Fastfile */,
+			);
+			path = fastlane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB828FD23EF31960088F28D /* .travis.yml in Resources */,
+				AFB828FB23EF2FEF0088F28D /* Fastfile in Resources */,
+				AFB828FA23EF2FEF0088F28D /* Appfile in Resources */,
 				AF4287C923EF2CC400AB2A03 /* LaunchScreen.storyboard in Resources */,
 				AF4287C623EF2CC400AB2A03 /* Assets.xcassets in Resources */,
 				AF4287C423EF2CC300AB2A03 /* Main.storyboard in Resources */,
@@ -549,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9F7G736HC;
 				INFOPLIST_FILE = ContinuesCITest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9F7G736HC;
 				INFOPLIST_FILE = ContinuesCITest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

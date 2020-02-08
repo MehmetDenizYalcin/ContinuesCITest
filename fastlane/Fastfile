@@ -1,0 +1,64 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+setup_travis
+
+platform :ios do
+
+  desc "Downloading pods with CocoaPods"
+  lane :pod do
+    cocoapods(podfile: "./Podfile")
+  end
+
+  desc "Building project with xcodebuild"
+  lane :build do
+    gym(
+      workspace: "ContinuesCITest.xcworkspace",
+      scheme: "ContinuesCITest",
+      xcargs: "-UseNewBuildSystem=YES",
+      skip_archive: true,
+      skip_package_ipa: true,
+      clean: true)
+  end
+
+  desc "Running XCTest cases."
+  lane :test do
+    run_tests(
+      devices: ["iPhone 8"],
+      clean: true)
+  end
+  
+  desc "Creating ipa"
+   lane :beta do
+      ensure_git_branch(
+         bracngh: 'dev'
+      )
+      build_app(scheme: "ContinuesCITest",
+                workspace: "ContinuesCITest.xcworkspace",
+                include_bitcode: true)
+    end
+  end
+
+  desc "Running Gitlab-CI scripts."
+  lane :ci do
+    pod
+    build
+    test
+  end
+
+end
+
