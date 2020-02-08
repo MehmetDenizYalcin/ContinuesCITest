@@ -45,7 +45,7 @@ platform :ios do
   desc "Creating ipa"
    lane :beta do
       ensure_git_branch(
-         bracngh: 'dev'
+         branch: 'dev'
       )
       build_app(scheme: "ContinuesCITest",
                 workspace: "ContinuesCITest.xcworkspace",
