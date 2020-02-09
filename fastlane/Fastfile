@@ -45,6 +45,8 @@ platform :ios do
   
   desc "Creating ipa"
    lane :beta do
+     get_certificates
+     get_provisioning_profile
       ensure_git_branch(
          branch: 'dev'
       )
