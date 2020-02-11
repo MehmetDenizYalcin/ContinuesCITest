@@ -567,7 +567,7 @@
 			baseConfigurationReference = 0E2B5C441FEE78A9202C6C55 /* Pods-ContinuesCITest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 77Y3N48SNF;
 				INFOPLIST_FILE = ContinuesCITest/Info.plist;
@@ -577,7 +577,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniz.ContinuesCITest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Deniz CI Test Dist";
+				PROVISIONING_PROFILE_SPECIFIER = "Deniz CI Test Dev 2";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,7 +588,7 @@
 			baseConfigurationReference = CC923BE24CBB5DDE14EFEE4F /* Pods-ContinuesCITest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 77Y3N48SNF;
 				INFOPLIST_FILE = ContinuesCITest/Info.plist;
@@ -598,7 +598,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniz.ContinuesCITest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Deniz CI Test Dist";
+				PROVISIONING_PROFILE_SPECIFIER = "Deniz CI Test Dev 2";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
